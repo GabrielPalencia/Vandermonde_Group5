@@ -4,6 +4,20 @@
 
 Este proyecto realiza la interpolación de puntos utilizando el método de la matriz de Vandermonde.
 
+###
+Integrantes:
+*   Kidman Cabana Perez
+*   Nelson Diaz Pizarro
+*   Gabriel Palencia Cure
+*   Presly Romero Col
+*   Jose Ferrer Vidal
+
+## Instalación
+
+En la terminal de comandos donde desee instalarlo ejecutar la siguiente línea:
+pip install git+https://github.com/GabrielPalencia/Vandermonde_Group5.git
+
+
 ## Requisitos
 
 - Lista de listas con puntos (x, y)
@@ -18,7 +32,18 @@ Este proyecto realiza la interpolación de puntos utilizando el método de la ma
 ## Ejemplo
 
 ```python
-puntos = [[1, 2], [3, 4], [5, 6]]
+from vandermonde_lib import Vandermonde
+
+set_of_points = [
+    [1, 2],
+    [2, 3],
+    [3, 5],
+    [4, 8],
+    [5, 12]
+]
+polynomial = Vandermonde(set_of_points)
+print(polynomial)
+
 # Código para realizar la interpolación
 ```
 
